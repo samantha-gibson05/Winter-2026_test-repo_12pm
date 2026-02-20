@@ -8,7 +8,16 @@ editor: visual
 ## Set up Chunk
 
 ```{r}
+#| message: false
 library(tidyverse)
 library(lterdatasampler)
+library(ggplot2)
 data(pie_crab)
 ```
+
+# Exploratoy Visualization
+```{r}
+ggplot(data = pie_crab, 
+       aes(x=latitude, y=size))
+```
+
