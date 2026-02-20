@@ -1,0 +1,14 @@
+---
+title: "workshop"
+date: "2026-02-20"
+format: html
+editor: visual
+---
+
+## Set up Chunk
+
+```{r}
+library(tidyverse)
+library(lterdatasampler)
+data(pie_crab)
+```
