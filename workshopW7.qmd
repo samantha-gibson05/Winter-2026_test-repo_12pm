@@ -12,12 +12,16 @@ editor: visual
 library(tidyverse)
 library(lterdatasampler)
 library(ggplot2)
+library(viridis)
 data(pie_crab)
 ```
 
 # Exploratoy Visualization
 ```{r}
 ggplot(data = pie_crab, 
-       aes(x=latitude, y=size))
+       aes(x=latitude, y=size, color=site))+
+  geom_point()+
+  theme_minimal()+
+  scale_color_viridis(discrete=T, option='plasma')
 ```
 
